@@ -2,7 +2,7 @@
 <html lang="id" class="scroll-smooth">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
   <title>Curriculum Vitae — Muhammad Pakhrid Wahyudin</title>
   
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -45,69 +45,77 @@
     }
   </style>
 </head>
-<body class="text-app-text font-sans antialiased min-h-screen selection:bg-emerald-500 selection:text-slate-950 py-10 px-4 sm:px-6 lg:px-8">
+<body class="text-app-text font-sans antialiased min-h-screen selection:bg-emerald-500 selection:text-slate-950 py-4 sm:py-10 px-3 sm:px-6 lg:px-8">
 
-  <main class="max-w-5xl mx-auto bg-app-panel border border-app-border rounded-3xl shadow-2xl overflow-hidden print-clean">
+  <main class="max-w-5xl mx-auto bg-app-panel border border-app-border rounded-2xl sm:rounded-3xl shadow-2xl overflow-hidden print-clean">
     
     <!-- Header Profil -->
-    <header class="p-8 sm:p-12 border-b border-app-border relative bg-gradient-to-b from-app-surface/50 to-transparent">
-      <div class="flex flex-col lg:flex-row gap-8 items-start justify-between">
+    <header class="p-5 sm:p-8 md:p-12 border-b border-app-border bg-gradient-to-b from-app-surface/40 to-transparent">
+      <div class="flex flex-col lg:flex-row gap-6 lg:gap-8 items-center lg:items-start justify-between">
         
-        <!-- Foto Profil & Identitas Diri -->
-        <div class="flex flex-col sm:flex-row items-center sm:items-start gap-8 text-center sm:text-left w-full lg:w-auto">
+        <!-- Foto & Nama -->
+        <div class="flex flex-col sm:flex-row items-center sm:items-start gap-5 sm:gap-8 text-center sm:text-left w-full">
+          <!-- Foto Pas -->
           <div class="relative shrink-0">
-            <div class="w-36 h-48 sm:w-40 sm:h-52 rounded-2xl overflow-hidden border border-app-border bg-app-surface shadow-xl p-1">
+            <div class="w-32 h-44 sm:w-36 sm:h-48 rounded-2xl overflow-hidden border border-app-border bg-app-surface shadow-xl p-1">
               <img src="fotoku_ 3x4.jpg.jpeg" alt="Muhammad Pakhrid Wahyudin" class="w-full h-full object-cover rounded-xl" onerror="this.src='https://via.placeholder.com/160x210?text=Pas+Foto'">
             </div>
-            <div class="absolute -bottom-3 left-1/2 -translate-x-1/2 sm:translate-x-0 sm:left-3 bg-emerald-500/20 text-emerald-300 border border-emerald-500/40 text-[11px] font-semibold font-mono tracking-wider uppercase px-3 py-0.5 rounded-full shadow-lg backdrop-blur">
+            <div class="absolute -bottom-2.5 left-1/2 -translate-x-1/2 bg-emerald-500/20 text-emerald-300 border border-emerald-500/40 text-[10px] sm:text-[11px] font-semibold font-mono tracking-wider uppercase px-2.5 py-0.5 rounded-full shadow-lg backdrop-blur whitespace-nowrap">
               IPK 3.76 Cum Laude
             </div>
           </div>
 
-          <div class="pt-2">
-            <div class="inline-flex items-center gap-2 px-3 py-1 bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs font-mono rounded-full mb-3">
+          <!-- Bio Identitas -->
+          <div class="pt-1 w-full">
+            <div class="inline-flex items-center gap-1.5 px-3 py-1 bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-[11px] sm:text-xs font-mono rounded-full mb-2.5">
               <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span> Web & Software Developer
             </div>
-            <h1 class="text-3xl sm:text-5xl font-extrabold text-white tracking-tight">MUHAMMAD PAKHRID WAHYUDIN</h1>
-            <p class="text-base sm:text-lg text-emerald-400 font-semibold mt-1">Lulusan S1 Teknik Informatika | Web & Software Developer | Data Analyst</p>
             
-            <div class="flex items-center gap-2 text-app-muted text-xs sm:text-sm mt-3">
-              <i class="fa-solid fa-location-dot text-rose-400"></i>
-              <span>Jl. Suwandi Block C NO 60, Samarinda, Kalimantan Timur</span>
+            <h1 class="text-2xl sm:text-4xl md:text-5xl font-extrabold text-white tracking-tight leading-tight">
+              MUHAMMAD PAKHRID WAHYUDIN
+            </h1>
+            
+            <p class="text-sm sm:text-base text-emerald-400 font-semibold mt-1">
+              Lulusan S1 Teknik Informatika | Web & Software Developer | Data Analyst
+            </p>
+            
+            <div class="flex items-center justify-center sm:justify-start gap-2 text-app-muted text-xs sm:text-sm mt-2.5">
+              <i class="fa-solid fa-location-dot text-rose-400 shrink-0"></i>
+              <span>Samarinda, Kalimantan Timur</span>
             </div>
           </div>
         </div>
 
-        <!-- Tombol Kontak & Buka PDF -->
-        <div class="w-full lg:w-72 shrink-0 bg-app-surface/60 p-5 rounded-2xl border border-app-border space-y-3 font-mono text-xs">
+        <!-- Tombol Aksi Kontak & PDF -->
+        <div class="w-full lg:w-72 shrink-0 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-2.5 font-mono text-xs">
           <!-- WhatsApp Link -->
-          <a href="https://wa.me/6282149744938" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 p-3 bg-emerald-500/10 border border-emerald-500/30 hover:bg-emerald-500/20 rounded-xl text-emerald-400 hover:text-emerald-300 transition group">
-            <span class="w-8 h-8 rounded-lg bg-emerald-500 text-slate-950 flex items-center justify-center text-base group-hover:scale-110 transition">
+          <a href="https://wa.me/6282149744938" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 p-3 bg-emerald-500/10 border border-emerald-500/30 hover:bg-emerald-500/20 rounded-xl text-emerald-400 hover:text-emerald-300 transition">
+            <span class="w-8 h-8 rounded-lg bg-emerald-500 text-slate-950 flex items-center justify-center text-base shrink-0">
               <i class="fa-brands fa-whatsapp"></i>
             </span>
-            <div class="leading-tight">
+            <div class="leading-tight text-left">
               <span class="block text-[10px] text-app-muted uppercase tracking-wider">WhatsApp</span>
               <span class="font-bold text-xs">0821-4974-4938</span>
             </div>
           </a>
 
           <!-- Buka Dokumen PDF -->
-          <a href="cv-muhammad-pakhrid-wahyudin.pdf" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 p-3 bg-slate-800/40 border border-app-border hover:bg-app-border rounded-xl text-slate-300 hover:text-white transition group">
-            <span class="w-8 h-8 rounded-lg bg-slate-800 text-emerald-400 flex items-center justify-center text-base group-hover:scale-110 transition">
-              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          <a href="cv-muhammad-pakhrid-wahyudin.pdf" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 p-3 bg-slate-800/60 border border-app-border hover:bg-app-border rounded-xl text-slate-200 hover:text-white transition">
+            <span class="w-8 h-8 rounded-lg bg-slate-800 text-emerald-400 flex items-center justify-center text-base shrink-0">
+              <i class="fa-solid fa-file-pdf"></i>
             </span>
-            <div class="leading-tight">
+            <div class="leading-tight text-left">
               <span class="block text-[10px] text-app-muted uppercase tracking-wider">Berkas CV</span>
               <span class="font-bold text-xs">Buka Dokumen PDF</span>
             </div>
           </a>
 
           <!-- Email Link -->
-          <a href="mailto:muhammadpakhridwahyudin@gmail.com" class="flex items-center gap-3 p-3 bg-slate-800/40 border border-app-border hover:bg-app-border rounded-xl text-slate-300 hover:text-white transition group">
-            <span class="w-8 h-8 rounded-lg bg-slate-800 text-emerald-400 flex items-center justify-center text-base group-hover:scale-110 transition">
+          <a href="mailto:muhammadpakhridwahyudin@gmail.com" class="flex items-center gap-3 p-3 bg-slate-800/60 border border-app-border hover:bg-app-border rounded-xl text-slate-200 hover:text-white transition sm:col-span-2 lg:col-span-1">
+            <span class="w-8 h-8 rounded-lg bg-slate-800 text-emerald-400 flex items-center justify-center text-base shrink-0">
               <i class="fa-solid fa-envelope"></i>
             </span>
-            <div class="leading-tight truncate">
+            <div class="leading-tight text-left truncate">
               <span class="block text-[10px] text-app-muted uppercase tracking-wider">Email</span>
               <span class="font-sans text-xs truncate">muhammadpakhridwahyudin@gmail.com</span>
             </div>
@@ -117,57 +125,57 @@
       </div>
 
       <!-- Tentang Saya -->
-      <div class="mt-8 pt-6 border-t border-app-border">
-        <h2 class="text-xs font-mono font-bold tracking-widest text-emerald-400 uppercase mb-3 flex items-center gap-2">
+      <div class="mt-6 pt-5 border-t border-app-border">
+        <h2 class="text-xs font-mono font-bold tracking-widest text-emerald-400 uppercase mb-2 flex items-center gap-2">
           <i class="fa-solid fa-user"></i> Tentang Saya
         </h2>
-        <p class="text-slate-300 text-sm sm:text-base leading-relaxed text-justify">
+        <p class="text-slate-300 text-xs sm:text-sm leading-relaxed text-justify">
           Lulusan Sarjana (S1) Teknik Informatika dari Universitas Muhammadiyah Kalimantan Timur dengan predikat Cum Laude (IPK 3,76). Memiliki minat dan keahlian di bidang web development, rekayasa perangkat lunak, serta analisis dan pengelolaan database. Memiliki pengalaman praktis dalam pembuatan website berbasis framework modern, pengolahan dan validasi data instansi saat magang di Dinas ESDM, serta implementasi sistem kecerdasan buatan. Dikenal sebagai pribadi yang teliti, bertanggung jawab, memiliki kemampuan analitis yang kuat, serta mampu bekerja sama secara efektif di dalam tim.
         </p>
       </div>
     </header>
 
-    <!-- Konten Utama 2 Kolom -->
-    <div class="p-8 sm:p-12 grid grid-cols-1 lg:grid-cols-12 gap-10">
+    <!-- Konten Utama -->
+    <div class="p-5 sm:p-8 md:p-12 grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10">
       
-      <!-- Kolom Kiri: Pengalaman & Pendidikan (8 Kolom) -->
-      <div class="lg:col-span-8 space-y-12">
+      <!-- Kolom Kiri: Pengalaman & Pendidikan (8 Kolom di Layar Lebar) -->
+      <div class="lg:col-span-8 space-y-8 sm:space-y-12">
         
         <!-- Pengalaman Kerja / Magang -->
         <section>
-          <div class="flex items-center justify-between pb-3 mb-6 border-b border-app-border">
-            <h2 class="text-base font-bold text-white uppercase tracking-wider flex items-center gap-2.5">
-              <span class="p-1.5 rounded-lg bg-emerald-500/10 text-emerald-400 text-sm"><i class="fa-solid fa-briefcase"></i></span>
+          <div class="flex items-center justify-between pb-2.5 mb-5 border-b border-app-border">
+            <h2 class="text-sm sm:text-base font-bold text-white uppercase tracking-wider flex items-center gap-2">
+              <span class="p-1 rounded-lg bg-emerald-500/10 text-emerald-400 text-xs sm:text-sm"><i class="fa-solid fa-briefcase"></i></span>
               Pengalaman Kerja / Magang
             </h2>
           </div>
 
-          <div class="relative pl-6 border-l-2 border-app-border space-y-8">
+          <div class="relative pl-4 sm:pl-6 border-l-2 border-app-border space-y-6">
             <div class="relative">
-              <span class="absolute -left-[31px] top-1.5 w-3 h-3 rounded-full bg-emerald-400 ring-4 ring-app-panel"></span>
+              <span class="absolute -left-[23px] sm:-left-[31px] top-1.5 w-2.5 sm:w-3 h-2.5 sm:h-3 rounded-full bg-emerald-400 ring-4 ring-app-panel"></span>
               
-              <div class="bg-app-surface/50 border border-app-border p-6 rounded-2xl">
+              <div class="bg-app-surface/50 border border-app-border p-4 sm:p-6 rounded-xl sm:rounded-2xl">
                 <div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-1 mb-1">
-                  <h3 class="text-lg font-bold text-white">Dinas Energi dan Sumber Daya Mineral (ESDM)</h3>
-                  <span class="font-mono text-xs px-2.5 py-0.5 rounded bg-emerald-950/40 border border-emerald-800/40 text-emerald-300">Periode Magang • 2024</span>
+                  <h3 class="text-base sm:text-lg font-bold text-white leading-snug">Dinas Energi dan Sumber Daya Mineral (ESDM)</h3>
+                  <span class="font-mono text-[11px] text-emerald-300 w-fit">Periode Magang • 2024</span>
                 </div>
-                <p class="text-sm font-semibold text-emerald-400 mb-4">Posisi: Anggota Tim IT & Pengolahan Data (Magang)</p>
+                <p class="text-xs sm:text-sm font-semibold text-emerald-400 mb-3">Posisi: Anggota Tim IT & Pengolahan Data (Magang)</p>
 
-                <ul class="space-y-3 text-sm text-slate-300">
-                  <li class="flex items-start gap-3">
-                    <span class="text-emerald-400 mt-1"><i class="fa-solid fa-circle-check text-xs"></i></span>
+                <ul class="space-y-2.5 text-xs sm:text-sm text-slate-300">
+                  <li class="flex items-start gap-2.5">
+                    <span class="text-emerald-400 mt-0.5 shrink-0"><i class="fa-solid fa-circle-check text-xs"></i></span>
                     <span class="leading-relaxed">Mengelola, memvalidasi, dan mengolah data operasional serta administratif untuk mendukung kelancaran kegiatan pendataan internal dinas.</span>
                   </li>
-                  <li class="flex items-start gap-3">
-                    <span class="text-emerald-400 mt-1"><i class="fa-solid fa-circle-check text-xs"></i></span>
+                  <li class="flex items-start gap-2.5">
+                    <span class="text-emerald-400 mt-0.5 shrink-0"><i class="fa-solid fa-circle-check text-xs"></i></span>
                     <span class="leading-relaxed">Menjaga kerapian, integritas, dan keakuratan data dalam sistem database agar mudah diakses, dianalisis, dan digunakan oleh divisi terkait.</span>
                   </li>
-                  <li class="flex items-start gap-3">
-                    <span class="text-emerald-400 mt-1"><i class="fa-solid fa-circle-check text-xs"></i></span>
+                  <li class="flex items-start gap-2.5">
+                    <span class="text-emerald-400 mt-0.5 shrink-0"><i class="fa-solid fa-circle-check text-xs"></i></span>
                     <span class="leading-relaxed">Berkolaborasi secara aktif dengan tim teknis dalam optimalisasi manajemen informasi dan sinkronisasi data dinas.</span>
                   </li>
-                  <li class="flex items-start gap-3">
-                    <span class="text-emerald-400 mt-1"><i class="fa-solid fa-circle-check text-xs"></i></span>
+                  <li class="flex items-start gap-2.5">
+                    <span class="text-emerald-400 mt-0.5 shrink-0"><i class="fa-solid fa-circle-check text-xs"></i></span>
                     <span class="leading-relaxed">Melakukan perbaikan dan troubleshooting dasar pada perangkat komputer, jaringan lokal (LAN), serta peripheral printer untuk memastikan kelangsungan operasional kantor.</span>
                   </li>
                 </ul>
@@ -178,58 +186,58 @@
 
         <!-- Riwayat Pendidikan & Proyek -->
         <section>
-          <div class="flex items-center justify-between pb-3 mb-6 border-b border-app-border">
-            <h2 class="text-base font-bold text-white uppercase tracking-wider flex items-center gap-2.5">
-              <span class="p-1.5 rounded-lg bg-emerald-500/10 text-emerald-400 text-sm"><i class="fa-solid fa-graduation-cap"></i></span>
+          <div class="flex items-center justify-between pb-2.5 mb-5 border-b border-app-border">
+            <h2 class="text-sm sm:text-base font-bold text-white uppercase tracking-wider flex items-center gap-2">
+              <span class="p-1 rounded-lg bg-emerald-500/10 text-emerald-400 text-xs sm:text-sm"><i class="fa-solid fa-graduation-cap"></i></span>
               Riwayat Pendidikan & Proyek
             </h2>
           </div>
 
-          <div class="bg-app-surface/50 border border-app-border p-6 rounded-2xl space-y-6">
+          <div class="bg-app-surface/50 border border-app-border p-4 sm:p-6 rounded-xl sm:rounded-2xl space-y-5">
             <div>
               <div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-1 mb-1">
-                <h3 class="text-lg font-bold text-white">Universitas Muhammadiyah Kalimantan Timur</h3>
-                <span class="font-mono text-xs text-app-muted">2022 – 2026 (Lulus: 13 Februari 2026)</span>
+                <h3 class="text-base sm:text-lg font-bold text-white leading-snug">Universitas Muhammadiyah Kalimantan Timur</h3>
+                <span class="font-mono text-[11px] text-app-muted">2022 – 2026 (Lulus: 13 Feb 2026)</span>
               </div>
-              <div class="flex items-center gap-2 text-sm font-semibold text-emerald-400">
+              <div class="flex items-center gap-2 text-xs sm:text-sm font-semibold text-emerald-400">
                 <span>S1 Teknik Informatika</span>
                 <span class="text-slate-600">•</span>
-                <span>IPK: 3,76 (Dengan Pujian / Cum Laude)</span>
+                <span>IPK: 3,76 (Cum Laude)</span>
               </div>
             </div>
 
-            <div class="space-y-4 pt-4 border-t border-app-border">
+            <div class="space-y-3.5 pt-4 border-t border-app-border">
               <h4 class="text-xs font-mono uppercase text-emerald-400 tracking-wider">Aktivitas & Proyek yang Dikembangkan:</h4>
               
               <!-- Organisasi & Lomba -->
-              <div class="p-4 rounded-xl bg-app-panel border border-app-border">
-                <div class="flex items-start justify-between gap-2 mb-1">
-                  <h5 class="text-sm font-bold text-white">Himpunan Mahasiswa Informatika & Lomba Robot</h5>
-                  <span class="font-mono text-[11px] text-amber-400">Juara 1 • 6 Agustus 2024</span>
+              <div class="p-3.5 sm:p-4 rounded-xl bg-app-panel border border-app-border">
+                <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-1">
+                  <h5 class="text-xs sm:text-sm font-bold text-white">Himpunan Mahasiswa Informatika & Lomba Robot</h5>
+                  <span class="font-mono text-[10px] text-amber-400 w-fit">Juara 1 • 6 Agust 2024</span>
                 </div>
-                <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+                <p class="text-xs text-slate-300 leading-relaxed">
                   Aktif dalam organisasi Himpunan Mahasiswa Informatika dan dipercaya sebagai panitia pelaksana lomba robot antar kelas. Berkontribusi membawa tim meraih pencapaian Juara 1 pada kompetisi tanggal 6 Agustus 2024.
                 </p>
               </div>
 
               <!-- Proyek Web Berita -->
-              <div class="p-4 rounded-xl bg-app-panel border border-app-border">
-                <div class="flex items-start justify-between gap-2 mb-1">
-                  <h5 class="text-sm font-bold text-white">Aplikasi Website Berita Berbasis Laravel</h5>
-                  <span class="font-mono text-[11px] text-emerald-400">Laravel & MySQL</span>
+              <div class="p-3.5 sm:p-4 rounded-xl bg-app-panel border border-app-border">
+                <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-1">
+                  <h5 class="text-xs sm:text-sm font-bold text-white">Aplikasi Website Berita Berbasis Laravel</h5>
+                  <span class="font-mono text-[10px] text-emerald-400 w-fit">Laravel & MySQL</span>
                 </div>
-                <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+                <p class="text-xs text-slate-300 leading-relaxed">
                   Mengembangkan proyek aplikasi website berita yang mampu mengelola kontributor, manajemen konten dinamis, serta menampilkan informasi secara aman, terstruktur, dan responsif di berbagai perangkat.
                 </p>
               </div>
 
               <!-- Proyek Pengenalan Wajah -->
-              <div class="p-4 rounded-xl bg-app-panel border border-app-border">
-                <div class="flex items-start justify-between gap-2 mb-1">
-                  <h5 class="text-sm font-bold text-white">Sistem Pengenalan Wajah Berbasis Barcode</h5>
-                  <span class="font-mono text-[11px] text-teal-400">Python & Face Recognition</span>
+              <div class="p-3.5 sm:p-4 rounded-xl bg-app-panel border border-app-border">
+                <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-1">
+                  <h5 class="text-xs sm:text-sm font-bold text-white">Sistem Pengenalan Wajah Berbasis Barcode</h5>
+                  <span class="font-mono text-[10px] text-teal-400 w-fit">Python & Face Recognition</span>
                 </div>
-                <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+                <p class="text-xs text-slate-300 leading-relaxed">
                   Mengembangkan sistem pengenalan wajah (Face Recognition) yang diintegrasikan dengan sistem barcode untuk mempercepat proses identifikasi serta otentikasi data pengguna secara akurat.
                 </p>
               </div>
@@ -240,23 +248,23 @@
 
       </div>
 
-      <!-- Kolom Kanan: Keahlian & Sertifikasi (4 Kolom) -->
-      <div class="lg:col-span-4 space-y-10">
+      <!-- Kolom Kanan: Keahlian & Sertifikasi -->
+      <div class="lg:col-span-4 space-y-8">
         
         <!-- Keahlian / Skills -->
         <section>
-          <div class="flex items-center justify-between pb-3 mb-6 border-b border-app-border">
-            <h2 class="text-base font-bold text-white uppercase tracking-wider flex items-center gap-2.5">
-              <span class="p-1.5 rounded-lg bg-emerald-500/10 text-emerald-400 text-sm"><i class="fa-solid fa-code"></i></span>
+          <div class="flex items-center justify-between pb-2.5 mb-5 border-b border-app-border">
+            <h2 class="text-sm sm:text-base font-bold text-white uppercase tracking-wider flex items-center gap-2">
+              <span class="p-1 rounded-lg bg-emerald-500/10 text-emerald-400 text-xs sm:text-sm"><i class="fa-solid fa-code"></i></span>
               Keahlian / Skills
             </h2>
           </div>
 
-          <div class="space-y-4">
+          <div class="space-y-3.5">
             <!-- Bahasa Pemrograman -->
-            <div class="p-4 bg-app-surface/50 border border-app-border rounded-xl">
+            <div class="p-3.5 sm:p-4 bg-app-surface/50 border border-app-border rounded-xl">
               <span class="text-xs font-mono text-app-muted uppercase tracking-wider block mb-2">Bahasa Pemrograman</span>
-              <div class="flex flex-wrap gap-2">
+              <div class="flex flex-wrap gap-1.5 sm:gap-2">
                 <span class="px-2.5 py-1 bg-app-panel border border-app-border rounded-md text-xs font-mono text-emerald-300">Python</span>
                 <span class="px-2.5 py-1 bg-app-panel border border-app-border rounded-md text-xs font-mono text-emerald-300">PHP</span>
                 <span class="px-2.5 py-1 bg-app-panel border border-app-border rounded-md text-xs font-mono text-emerald-300">JavaScript</span>
@@ -264,20 +272,20 @@
             </div>
 
             <!-- Web Development -->
-            <div class="p-4 bg-app-surface/50 border border-app-border rounded-xl">
+            <div class="p-3.5 sm:p-4 bg-app-surface/50 border border-app-border rounded-xl">
               <span class="text-xs font-mono text-app-muted uppercase tracking-wider block mb-2">Web Development</span>
-              <div class="flex flex-wrap gap-2">
+              <div class="flex flex-wrap gap-1.5 sm:gap-2">
                 <span class="px-2.5 py-1 bg-app-panel border border-app-border rounded-md text-xs font-mono text-teal-300">HTML</span>
                 <span class="px-2.5 py-1 bg-app-panel border border-app-border rounded-md text-xs font-mono text-teal-300">CSS</span>
-                <span class="px-2.5 py-1 bg-app-panel border border-app-border rounded-md text-xs font-mono text-teal-300">Laravel Framework</span>
-                <span class="px-2.5 py-1 bg-app-panel border border-app-border rounded-md text-xs font-mono text-teal-300">Django Framework</span>
+                <span class="px-2.5 py-1 bg-app-panel border border-app-border rounded-md text-xs font-mono text-teal-300">Laravel</span>
+                <span class="px-2.5 py-1 bg-app-panel border border-app-border rounded-md text-xs font-mono text-teal-300">Django</span>
               </div>
             </div>
 
             <!-- Database & Analisis Data -->
-            <div class="p-4 bg-app-surface/50 border border-app-border rounded-xl">
-              <span class="text-xs font-mono text-amber-400 uppercase tracking-wider block mb-2">Pengelolaan Database & Data</span>
-              <div class="flex flex-wrap gap-2">
+            <div class="p-3.5 sm:p-4 bg-app-surface/50 border border-app-border rounded-xl">
+              <span class="text-xs font-mono text-amber-400 uppercase tracking-wider block mb-2">Database & Analisis Data</span>
+              <div class="flex flex-wrap gap-1.5 sm:gap-2">
                 <span class="px-2.5 py-1 bg-app-panel border border-app-border rounded-md text-xs font-mono text-amber-300">MySQL</span>
                 <span class="px-2.5 py-1 bg-app-panel border border-app-border rounded-md text-xs font-mono text-amber-300">RDBMS</span>
                 <span class="px-2.5 py-1 bg-app-panel border border-app-border rounded-md text-xs font-mono text-amber-300">SQL Queries</span>
@@ -287,19 +295,19 @@
             </div>
 
             <!-- Keahlian Tambahan -->
-            <div class="p-4 bg-app-surface/50 border border-app-border rounded-xl">
+            <div class="p-3.5 sm:p-4 bg-app-surface/50 border border-app-border rounded-xl">
               <span class="text-xs font-mono text-app-muted uppercase tracking-wider block mb-2">Keahlian Tambahan</span>
               <ul class="space-y-2 text-xs text-slate-300">
                 <li class="flex items-start gap-2">
-                  <i class="fa-solid fa-wrench text-emerald-400 mt-1"></i>
+                  <i class="fa-solid fa-wrench text-emerald-400 mt-0.5 shrink-0"></i>
                   <span>Troubleshooting Hardware & Software</span>
                 </li>
                 <li class="flex items-start gap-2">
-                  <i class="fa-solid fa-chart-simple text-emerald-400 mt-1"></i>
+                  <i class="fa-solid fa-chart-simple text-emerald-400 mt-0.5 shrink-0"></i>
                   <span>Pengolahan & Analisis Data Operasional</span>
                 </li>
                 <li class="flex items-start gap-2">
-                  <i class="fa-solid fa-id-card-clip text-emerald-400 mt-1"></i>
+                  <i class="fa-solid fa-id-card-clip text-emerald-400 mt-0.5 shrink-0"></i>
                   <span>Pengembangan Sistem Biometrik (Face Recognition)</span>
                 </li>
               </ul>
@@ -309,19 +317,19 @@
 
         <!-- Sertifikasi -->
         <section>
-          <div class="flex items-center justify-between pb-3 mb-6 border-b border-app-border">
-            <h2 class="text-base font-bold text-white uppercase tracking-wider flex items-center gap-2.5">
-              <span class="p-1.5 rounded-lg bg-emerald-500/10 text-emerald-400 text-sm"><i class="fa-solid fa-certificate"></i></span>
+          <div class="flex items-center justify-between pb-2.5 mb-5 border-b border-app-border">
+            <h2 class="text-sm sm:text-base font-bold text-white uppercase tracking-wider flex items-center gap-2">
+              <span class="p-1 rounded-lg bg-emerald-500/10 text-emerald-400 text-xs sm:text-sm"><i class="fa-solid fa-certificate"></i></span>
               Sertifikasi
             </h2>
           </div>
 
-          <div class="p-5 bg-app-surface/60 border border-app-border rounded-2xl">
-            <div class="flex items-center justify-between gap-1 mb-1">
-              <h3 class="text-sm font-bold text-white">Sertifikat Praktik Kerja Lapangan (PKL) / Magang</h3>
-              <span class="font-mono text-xs text-emerald-400 font-semibold">2024</span>
+          <div class="p-4 sm:p-5 bg-app-surface/60 border border-app-border rounded-xl sm:rounded-2xl">
+            <div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-1 mb-1">
+              <h3 class="text-xs sm:text-sm font-bold text-white">Sertifikat Praktik Kerja Lapangan (PKL) / Magang</h3>
+              <span class="font-mono text-xs text-emerald-400 font-semibold w-fit">2024</span>
             </div>
-            <p class="text-xs font-mono text-app-muted mb-3">Lembaga Penerbit: Dinas Energi dan Sumber Daya Mineral (ESDM)</p>
+            <p class="text-xs font-mono text-app-muted mb-2.5">Lembaga: Dinas ESDM</p>
             <p class="text-xs text-slate-300 leading-relaxed">
               Diberikan atas keberhasilan menyelesaikan program magang dan kontribusi dalam manajemen data serta dukungan operasional teknologi informasi (IT) di lingkungan Dinas ESDM.
             </p>
@@ -332,10 +340,9 @@
 
     </div>
 
-    <!-- Footer -->
-    <footer class="p-8 border-t border-app-border bg-app-panel text-center font-mono text-xs text-app-muted no-print flex flex-col sm:flex-row items-center justify-between gap-4">
-      <div>Muhammad Pakhrid Wahyudin &bull; Samarinda, Kalimantan Timur</div>
-      <div>Terakhir diperbarui: 2026 &bull; Siap di-deploy ke GitHub Pages</div>
+    <!-- Footer Bersih -->
+    <footer class="p-5 sm:p-8 border-t border-app-border bg-app-panel text-center font-mono text-[11px] sm:text-xs text-app-muted no-print">
+      <p>Muhammad Pakhrid Wahyudin &bull; Samarinda, Kalimantan Timur</p>
     </footer>
 
   </main>
